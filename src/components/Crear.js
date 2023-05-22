@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {GuardarEnStorage} from "../helpers/GuardarEnStorage";
 
 const Crear = () => {
     
@@ -26,13 +27,19 @@ const Crear = () => {
             descripcion
         }
 
+        //guardar estado
         setPeliState(peli);
+
+        //guardar en el almacenamiento local
+        GuardarEnStorage("pelis", peli)
     }
+    
+   
 
     return (
         <div className="add">
             <h3 className="title">Añadir Pelicula:</h3>
-            
+
             <strong>
                 {(titulo && descripcion) && "Has creado la pelicula: "+titulo}
             </strong>
