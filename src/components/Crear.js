@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from "react";
 import {GuardarEnStorage} from "../helpers/GuardarEnStorage";
 
 const Crear = ({setListadoState}) => {
@@ -39,15 +39,15 @@ const Crear = ({setListadoState}) => {
         GuardarEnStorage("pelis", peli)
 
     }
-    
-   
 
+    
+    
     return (
         <div className="add">
             <h3 className="title">Añadir Pelicula:</h3>
 
             <strong>
-                {(titulo && descripcion) && "Has creado la pelicula: "+titulo}
+                {(titulo && descripcion) && "Has creado la pelicula: "+ titulo}
             </strong>
 
             <form onSubmit={conseguirDatosForm}>

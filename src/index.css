@@ -166,7 +166,9 @@ input[type="button"] {
 
 .lateral input[type="text"],
 .lateral input[type="search"],
-.lateral textarea {
+.lateral textarea,
+.titulo_editado,
+.descripcion_editada {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
