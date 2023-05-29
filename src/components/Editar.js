@@ -17,7 +17,7 @@ const Editar = ({peli, conseguirPeliculas, setEditar, setListadoState}) => {
         let peli_actualizada = {
           id,
           titulo: target.titulo.value, 
-          descripcion: target.titulo.value
+          descripcion: target.descripcion.value
         }
 
         // Actualizar el elemento con ese indice
